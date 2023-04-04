@@ -1,0 +1,1 @@
+export { default as TerminalAnimation } from "./terminal-animation";
