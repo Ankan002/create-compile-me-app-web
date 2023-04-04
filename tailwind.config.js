@@ -23,7 +23,12 @@ module.exports = {
 				"secondary-yellow": "#FEE9C0",
 				"semi-transparent": "rgba(0, 0, 0, 0.6)",
 				"primary-green": "#08CD92",
+				"secondary-green": "#C1FBE6",
+				"dark-green": "#51AB39",
 				"primary-red": "#D61C4E",
+				"primary-blue": "#59AFEF",
+				"primary-purple": "#E7C7FF",
+				"secondary-purple": "#8F30E0"
 			},
 			fontFamily: {
 				manrope: "'Manrope', sans-serif",
