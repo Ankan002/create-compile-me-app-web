@@ -8,6 +8,7 @@
 
 *{
 	transition: all .2s ease-in-out;
+	scroll-behavior: smooth;
 }
 
 .font-outline-2 {
