@@ -1,32 +1,38 @@
-"use client"
+"use client";
 
 import { BsGithub } from "react-icons/bs";
 
-type Props = {
-    type: "github";
-    link: string;
-} | {
-   type: "text";
-   text: string;
-   link: string;
-}
+type Props =
+	| {
+			type: "github";
+			link: string;
+	  }
+	| {
+			type: "text";
+			text: string;
+			link: string;
+	  };
 
 const NavbarBtn = (props: Props) => {
-    const { type, link } = props;
+	const { type, link } = props;
 
-    const onButtonPressed = () => {
-        if(window !== undefined) window.location.href = link;
-    }
+	const onButtonPressed = () => {
+		if (window !== undefined) window.location.href = link;
+	};
 
-    return (
-        <button className="p-2 flex justify-center items-center border-2 rounded-md border-primary-dark" onClick={onButtonPressed}>
-            {
-                type === "github" && (
-                    <BsGithub className="text-xl text-primary-dark" />
-                )
-            }
-        </button>
-    )
-}
+	return (
+		<button
+			className="p-2 flex justify-center items-center border-2 rounded-md border-primary-dark"
+			onClick={onButtonPressed}
+		>
+			{type === "github" && (
+				<BsGithub
+					className="text-xl text-primary-dark"
+					aria-label={`go to Github`}
+				/>
+			)}
+		</button>
+	);
+};
 
 export default NavbarBtn;
