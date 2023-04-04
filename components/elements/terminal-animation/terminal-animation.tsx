@@ -28,7 +28,7 @@ const TerminalAnimation = (props: Props) => {
 				<Cursor cursorBlinking={true} cursorColor="#D61C4E" />
 			</p>
 
-			<button className="text-primary-red rounded-full hover:shadow-md hover:shadow-primary-dark/40 p-2 border-2 border-primary-yellow hover:border-primary-dark">
+			<button className="text-primary-red rounded-full hover:shadow-md hover:shadow-primary-dark/40 p-2 border-2 border-primary-yellow hover:border-primary-dark" aria-label="copy command">
 				<MdContentCopy className="text-2xl" />
 			</button>
 		</div>
