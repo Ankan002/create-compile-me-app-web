@@ -20,6 +20,7 @@ const HeroSection = () => {
 
 				<TerminalAnimation
 					terminalCommands={["npx create-compile-me-app@latest"]}
+					copyText="npx create-compile-me-app@latest"
 				/>
 
 				<div className="w-full flex flex-wrap items-center justify-center mt-5">
