@@ -19,7 +19,7 @@ const TerminalAnimation = (props: Props) => {
 	});
 
 	return (
-		<div className="lg:w-1/2 md:w-2/3 sm:w-4/5 w-full border-2 border-primary-dark rounded-md px-5 py-3 bg-primary-yellow mt-8 flex items-center shadow-xl shadow-primary-dark/40 justify-between">
+		<div className="lg:w-1/2 md:w-2/3 sm:w-4/5 w-full border-2 border-primary-dark rounded-md px-5 py-3 bg-primary-yellow mt-8 flex items-center shadow-xl shadow-primary-dark/40 justify-between lg:min-h-0 min-h-[100px]">
 			<p className="text-xl">
 				<span className="text-primary-red">➜</span>
 				<span className="ml-3 md:tracking-widest font-fira-code text-secondary-dark">
