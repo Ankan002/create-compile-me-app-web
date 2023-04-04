@@ -1,5 +1,6 @@
 import Image from "next/image";
 import CreateCompileMeAppLogo from "../../assets/images/create-compile-me-app-logo.png";
+import { NavbarBtn } from "components/elements";
 
 const Navbar = () => {
     return (
@@ -10,6 +11,10 @@ const Navbar = () => {
                 <h1 className="ml-3 md:text-xl text-lg md:font-normal font-semibold tracking-widest">
                     Create Compile Me App
                 </h1>
+            </div>
+
+            <div className="flex items-center justify-center">
+                <NavbarBtn type="github" link="https://github.com/Ankan002/create-compile-me-app-web" />
             </div>
         </header>
     )
