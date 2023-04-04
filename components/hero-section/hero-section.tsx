@@ -2,8 +2,8 @@ import { TerminalAnimation } from "components/elements";
 
 const HeroSection = () => {
 	return (
-		<div className="flex-1 flex flex-col items-center justify-center px-3 py-4">
-			<div className="flex flex-wrap items-center justify-center">
+		<div className="h-screen flex flex-col items-center justify-center px-3 py-4">
+			<div className="flex flex-wrap items-center justify-center mt-8">
 				<p className="md:text-6xl sm:text-5xl text-4xl mx-2 font-bold tracking-widest font-outline-2 text-primary-yellow break-all text-center">
 					Think.
 				</p>
