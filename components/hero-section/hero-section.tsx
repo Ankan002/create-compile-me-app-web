@@ -52,7 +52,7 @@ const HeroSection = () => {
 			</div>
 
 			<div className="flex items-center justify-center">
-				<Link href="#">
+				<Link href="#" aria-label="know more">
 					<HiChevronDown className="text-4xl animate-bounce text-primary-red" />
 				</Link>
 			</div>

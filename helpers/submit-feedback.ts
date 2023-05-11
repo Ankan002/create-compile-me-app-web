@@ -37,8 +37,6 @@ export const submitFeedback = async (args: Args) => {
 
 		const data = await response.json();
 
-        console.log(data);
-
 		if (!data.success) {
 			return {
 				success: false,

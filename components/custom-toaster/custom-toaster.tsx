@@ -6,12 +6,12 @@ const CustomToaster = () => {
     return (
         <Toaster
             toastOptions={{
-                className: "border-2 rounded-sm border-primary-dark bg-secondary-light font-quicksand text-lg tracking-wider text-primary-dark font-bold",
+                className: "border-2 rounded-md border-primary-dark bg-secondary-yellow font-quicksand text-base tracking-wider text-primary-dark font-semibold",
                 success: {
-                    className: "border-2 rounded-sm bg-secondary-light font-quicksand text-lg tracking-wider text-primary-dark font-bold border-primary-green"
+                    className: "border-2 rounded-lg bg-secondary-yellow font-quicksand text-base tracking-wider text-primary-dark font-semibold border-primary-green"
                 },
                 error: {
-                    className: "border-2 rounded-sm bg-secondary-light font-quicksand text-lg tracking-wider text-primary-dark font-bold border-primary-red"
+                    className: "border-2 rounded-lg bg-secondary-yellow font-quicksand text-base tracking-wider text-primary-dark font-semibold border-primary-red"
                 }
             }}
         />

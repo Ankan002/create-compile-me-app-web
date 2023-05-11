@@ -24,8 +24,6 @@ const FeedbackInputSection = () => {
 		setIsPostingFeedback(false);
 		toast.dismiss(loadingToaster);
 
-		console.log(response);
-
 		if (!response.success) {
 			toast.error(response.error);
 			return;
