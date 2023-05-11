@@ -6,7 +6,7 @@ const FeedbackSection = () => {
 			className="p-5 bg-secondary-green flex flex-col items-center"
 			id="feedback"
 		>
-			<h3 className="text-5xl tracking-widest font-extrabold text-primary-red drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+			<h3 className="text-5xl tracking-widest font-extrabold text-primary-red">
 				Feedback
 			</h3>
 
