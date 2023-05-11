@@ -38,13 +38,21 @@ const HeroSection = () => {
 				/>
 
 				<div className="w-full flex flex-wrap items-center justify-center mt-5">
-					<HeroActionBtn title="Feedback" redirectArrow={false} redirectTo="#feedback" />
-					<HeroActionBtn title="Docs" redirectArrow={true} />
+					<HeroActionBtn
+						title="Feedback"
+						redirectArrow={false}
+						redirectTo="#feedback"
+					/>
+					<HeroActionBtn
+						title="Docs"
+						redirectArrow={true}
+						redirectTo="https://www.npmjs.com/package/create-compile-me-app"
+					/>
 				</div>
 			</div>
 
 			<div className="flex items-center justify-center">
-				<Link href="#">
+				<Link href="#" aria-label="know more">
 					<HiChevronDown className="text-4xl animate-bounce text-primary-red" />
 				</Link>
 			</div>
