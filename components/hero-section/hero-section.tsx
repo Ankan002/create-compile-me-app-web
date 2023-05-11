@@ -38,7 +38,7 @@ const HeroSection = () => {
 				/>
 
 				<div className="w-full flex flex-wrap items-center justify-center mt-5">
-					<HeroActionBtn title="Feedback" redirectArrow={false} />
+					<HeroActionBtn title="Feedback" redirectArrow={false} redirectTo="#feedback" />
 					<HeroActionBtn title="Docs" redirectArrow={true} />
 				</div>
 			</div>
