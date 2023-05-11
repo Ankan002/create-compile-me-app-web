@@ -3,6 +3,7 @@
 import { TextInput } from "@/components/elements";
 import { submitFeedback } from "@/helpers";
 import { useState } from "react";
+import { toast } from "react-hot-toast";
 
 const FeedbackInputSection = () => {
 	const [emailId, setEmailId] = useState<string>("");
@@ -13,20 +14,24 @@ const FeedbackInputSection = () => {
 		if (isPostingFeedback) return;
 
 		setIsPostingFeedback(true);
+		const loadingToaster = toast.loading("Posting your feedback");
 
 		const response = await submitFeedback({
 			email: emailId,
 			feedback,
 		});
 
+		setIsPostingFeedback(false);
+		toast.dismiss(loadingToaster);
+
 		console.log(response);
 
 		if (!response.success) {
-			setIsPostingFeedback(false);
+			toast.error(response.error);
 			return;
 		}
 
-		setIsPostingFeedback(false);
+		toast.success("Thanks for your valuable feedback");
 		setEmailId("");
 		setFeedback("");
 	};
